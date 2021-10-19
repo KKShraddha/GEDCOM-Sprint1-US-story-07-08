@@ -1,0 +1,15 @@
+import sys
+import unittest
+from us7test import lessThan150
+
+class TestAgeLessThan150(unittest.TestCase):
+
+    def test(self):
+        testperson = 40
+        result = lessThan150(testperson)
+        self.assertFalse(result, True)
+        print("success")
+
+
+if __name__ == "__main__":
+    unittest.main()
